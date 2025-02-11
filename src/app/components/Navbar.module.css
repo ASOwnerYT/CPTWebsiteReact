@@ -1,0 +1,210 @@
+.navbar {
+  /* Make navbar stay at top of screen (static) */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+/* Reset default styling on lists */
+.navbar .container ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+/* Position nav items correctly */
+.navbar .container li {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+/* Reset default styling on links */
+.navbar .container li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Underline links on hover */
+.navbar .container li a:hover {
+  text-decoration: underline;
+}
+
+/* Make active link bold */
+.navbar .container li a.active {
+  font-weight: bold;
+}
+
+.navbar .container li a svg {
+  width: 1em;
+  height: 1em;
+}
+
+.navbar .container li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+}
+
+.highlight {
+  color: white;
+  background-color: var(--accent);
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+/* Add styles for mobile view */
+@media (max-width: 500px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+
+    position: absolute;
+    top: -10em;
+    left: 0;
+    right: 0;
+    z-index: -2;
+
+    font-size: 1rem;
+    background-color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    transition-property: top border-radius;
+    transition-duration: 0.3s;
+  }
+
+  .links {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .links li,
+  .dropdownTitle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5em;
+  }
+
+  .active {
+    top: 4rem;
+    border-radius: 0 0 0.5em 0.5em;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+  }
+
+  .dropdown {
+    padding: 0 !important;
+  }
+}
+
+/* Styles for desktop view */
+@media (min-width: 501px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdownMenu {
+    position: absolute;
+    display: none;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .dropdown:hover .dropdownMenu {
+    display: block;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 1em;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.logo p {
+  color: black;
+  margin-bottom: 0;
+  font-family: var(--font-geist-mono);
+}
+
+.dropdown a {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.dropdown li {
+  margin-bottom: 0;
+}
+
+.dropdownMenu li:last-of-type {
+  margin-bottom: 0;
+}
+
+.dropdown:not(.dropdownActive) {
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.dropdown:not(.dropdownActive) li {
+  margin: 0 !important;
+}
+
+.dropdownActive {
+  background-color: #f1f1f1;
+}
+
+.dropdownMenu {
+  display: none;
+}
+
+.dropdownActive .dropdownMenu {
+  display: block;
+}
+
+.dropdown:not(.dropdownActive) .dropdownTitle {
+  margin-bottom: 0;
+}

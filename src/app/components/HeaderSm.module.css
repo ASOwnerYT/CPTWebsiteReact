@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  height: 10em;
+  margin-bottom: 3.5em;
+}
+
+.header img {
+  filter: brightness(50%);
+}
+
+.textbox {
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}

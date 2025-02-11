@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  height: 50em;
+  margin-bottom: 3.5em;
+}
+
+.header img {
+  filter: brightness(50%);
+}
+
+.textbox {
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.p {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 920px) {
+  .header {
+    height: 50em;
+    clip-path: polygon(0 0, 100% 0, 100% 25em, 0 100%);
+    margin-bottom: none;
+  }
+
+  .textbox {
+    margin-top: -5em;
+  }
+
+  .textboxInner {
+    width: 50%;
+    max-width: 35em;
+  }
+}
+
+.map {
+  width: 100%;
+  margin-bottom: 10em;
+}

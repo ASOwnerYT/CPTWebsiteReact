@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import bgimage from "./assets/header-bg.jpg";
 import Button from "./components/Button";
 import Link from "next/link";
-import { GoogleMapsEmbed } from "@next/third-parties/google";
 
 export default function Home() {
   return (
@@ -158,17 +157,6 @@ export default function Home() {
                 business using Wordpress or custom React/NextJS code.
               </p>
             </div>
-          </div>
-        </section>
-        <section className="container mx-auto">
-          <div className={styles.map}>
-            <GoogleMapsEmbed
-              apiKey="AIzaSyDbgQY55TQY5CefsCUwKbc8RfoOUe8U5gY"
-              height="500px"
-              width="100%"
-              mode="place"
-              q="place_id:ChIJz0ZoDYhADW0R0TDgWoWMq0M"
-            />
           </div>
         </section>
       </main>

@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Computer Programming at Rutherford College",
+  title: "Programming at Rutherford College",
   description: "Consider taking Computer Programming at Rutherford College next year",
 };
 

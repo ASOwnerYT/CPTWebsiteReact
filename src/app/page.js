@@ -25,7 +25,7 @@ export default function Home() {
             <div className={styles.textbox}>
               <div className="container mx-auto">
                 <div className={styles.textboxInner}>
-                  <h1 className="mb-4 text-6xl font-bold">Delivering Exceptional Service.</h1>
+                  <h1 className="mb-4 text-5xl font-bold font-mono">Study Programming At Rutherford College</h1>
                   <p className={styles.p}>
                     <strong>
                       Fast, Reliable Computer Repairs in Te Atatu Peninsula

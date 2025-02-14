@@ -52,7 +52,7 @@ export default function Navbar() {
           <div>
             <Link href="/" className={styles.logo}>
               <Image src={logo} width="32" height="32" alt="Logo" />
-              <p>Te Atatu Computers</p>
+              <p>Rutherford College</p>
             </Link>
           </div>
           <button

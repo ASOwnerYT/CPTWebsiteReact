@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Programming at Rutherford College",
-  description: "Consider taking Computer Programming at Rutherford College next year",
+  title: "Learn Computer Programming",
+  description: "Learn HTML, CSS, Javascript, Python and more",
 };
 
 export default function RootLayout({ children }) {

@@ -37,7 +37,7 @@ export default function Footer() {
           </a>
         </h3>
       </div>
-      <p>Copyright © Te Atatu Computer Repair, 2024</p>
+      <p>Copyright © John-Allan Lambert, 2024</p>
     </footer>
   );
 }

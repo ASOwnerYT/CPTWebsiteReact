@@ -25,19 +25,9 @@ export default function Home() {
             <div className={styles.textbox}>
               <div className="container mx-auto">
                 <div className={styles.textboxInner}>
-                  <h1 className="mb-4 text-5xl font-bold font-mono">Study Programming At Rutherford College</h1>
+                  <h1 className="mb-4 text-5xl font-bold font-mono">Learn<br/>Computer<br/>Programming</h1>
                   <p className={styles.p}>
-                    <strong>
-                      Fast, Reliable Computer Repairs in Te Atatu Peninsula
-                    </strong>
-                    <br />
-                    <strong>
-                      Your Local Experts for PCs, Laptops & More
-                    </strong>{" "}
-                    <br />
-                    From hardware fixes to software solutions, we&apos;re here
-                    to get your devices back in top shape. Friendly, affordable
-                    service right in your neighborhood!
+                    Get started learning to code today! Learn Scratch, Python, web development and more.
                   </p>
                   <Link href="/contact">
                     <Button>

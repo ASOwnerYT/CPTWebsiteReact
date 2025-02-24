@@ -25,9 +25,16 @@ export default function Home() {
             <div className={styles.textbox}>
               <div className="container mx-auto">
                 <div className={styles.textboxInner}>
-                  <h1 className="mb-4 text-5xl font-bold font-mono">Learn<br/>Computer<br/>Programming</h1>
+                  <h1 className="mb-4 text-5xl font-bold font-mono">
+                    Learn
+                    <br />
+                    Computer
+                    <br />
+                    Programming
+                  </h1>
                   <p className={styles.p}>
-                    Get started learning to code today! Learn Scratch, Python, web development and more.
+                    Get started learning to code today! Learn Scratch, Python,
+                    web development and more.
                   </p>
                   <Link href="/contact">
                     <Button>
@@ -52,77 +59,23 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto mb-16">
-          <h1 className="text-center text-3xl font-bold mb-4">Services we Offer</h1>
+          <h1 className="text-center text-3xl font-bold mb-4">
+            Learn Programming Languages
+          </h1>
           <div className="text-center mb-4 flex flex-row flex-wrap justify-center">
             <div className="max-w-xs p-4 text-center justify-center">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#000000"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
                 width="6rem"
                 className="mx-auto mb-4"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
-                />
+                <path d="M11.406 11.312c-.78-.123-1.198-.654-.99-2.295l.023-.198c.175-1.426.321-1.743.996-1.706.198.013.426.14.654.33.211.247.68.568.945 1.204.19.466.254.77.281 1.098l.042.402v-.002a.68.68 0 0 0 1.342-.007c.008-.044.176-4.365.176-4.436 0-.38-.302-.69-.68-.696a.685.685 0 0 0-.682.688c0 .009-.001.605-.014 1.206-.536-.592-1.223-1.123-1.994-1.17-2.058-.11-2.283 1.811-2.419 2.918l-.02.196c-.278 2.189.441 3.569 2.13 3.837 1.838.293 3.063.72 3.074 1.868.007.446-.224.903-.627 1.254a2.163 2.163 0 0 1-1.749.507 3.233 3.233 0 0 1-.539-.141c-.24-.136-.847-.51-1.154-.942-.26-.364-.35-.937-.378-1.3.004-.163.005-.27.005-.283a.69.69 0 0 0-.669-.703.689.689 0 0 0-.696.682c0 .013-.017 1.367-.066 2.183-.07 1.313 0 2.426 0 2.474.028.382.35.67.727.644a.681.681 0 0 0 .635-.733c0-.006-.033-.545-.029-1.29a5.21 5.21 0 0 0 1.938.773 3.451 3.451 0 0 0 2.856-.82c.713-.619 1.122-1.464 1.11-2.32-.024-2.555-2.865-3.004-4.228-3.222M14.174 0a5.51 5.51 0 0 0-2.724.723h-.112c-2.637 0-4.937 1.392-6.15 3.728-.728 1.393-.9 2.75-.999 3.579-.012.089-.018.17-.028.262-.12.974-.123 1.904-.01 2.772a5.824 5.824 0 0 0-.625 2.529v.016a58.919 58.919 0 0 1-.057 1.95 29.72 29.72 0 0 0-.008 2.94l.013.209C3.698 21.676 6.159 24 9.083 24a5.516 5.516 0 0 0 3.463-1.21 8.357 8.357 0 0 0 5.195-2.08c1.826-1.587 2.859-3.845 2.83-6.19-.013-1.362-.346-2.638-.978-3.763.117-1.273.221-4.996.221-5.03 0-3.103-2.484-5.67-5.539-5.727zm.056 2.675c1.642.03 2.978 1.412 2.978 3.081 0 .038-.145 4.497-.215 4.883a3.152 3.152 0 0 1-.203.69c.756.89 1.165 2 1.175 3.256.021 1.555-.681 3.076-1.926 4.16a5.763 5.763 0 0 1-3.8 1.444 5.986 5.986 0 0 1-.718-.048 3.386 3.386 0 0 1-.172.215 2.97 2.97 0 0 1-2.264 1.038c-1.573 0-2.897-1.255-3.013-2.856l-.008-.122a27.366 27.366 0 0 1 .005-2.662c.039-.679.06-1.831.062-2.08a3.124 3.124 0 0 1 .783-2.025c-.237-.835-.312-1.836-.167-3.02l.024-.212c.083-.695.208-1.72.72-2.7.765-1.473 2.168-2.318 3.848-2.318a4.568 4.568 0 0 1 .824.07c.546-.5 1.27-.81 2.067-.794Z" />
               </svg>
-              <h2 className="text-xl font-bold mb-2">Computer Repair/Upgrades</h2>
-              <p>
-                We can fix anything from a broken screen to a software issue, or
-                upgrade your computer&apos;s parts and optimise Windows to get
-                your PC running like new again.
-              </p>
-            </div>
-            <div className="max-w-xs p-4 text-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                width="6rem"
-                className="mx-auto mb-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"
-                />
-              </svg>
-
-              <h2 className="text-xl font-bold mb-2">Desktop PC Building</h2>
-              <p>
-                We&apos;ll help you pick the parts and build a custom gaming or
-                workstation PC for you.
-              </p>
-            </div>
-            <div className="max-w-xs p-4 text-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                width="6rem"
-                className="mx-auto mb-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                />
-              </svg>
-
-              <h2 className="text-xl font-bold mb-2">Remote Access Support</h2>
-              <p>
-                We can remotely connect to your computer and fix
-                software/operating system related issues from the comfort of
-                your own home.
-              </p>
+              <h2 className="text-xl font-bold mb-2">Scratch</h2>
+              <p>Get started learning basic coding concepts</p>
             </div>
             <div className="max-w-xs p-4 text-center justify-center">
               <svg
@@ -143,8 +96,26 @@ export default function Home() {
 
               <h2 className="text-xl font-bold mb-2">Web Development</h2>
               <p>
-                We can develop a fast, modern and secure website for your
-                business using Wordpress or custom React/NextJS code.
+                Learn HTML, CSS & Javascript - the three core programming
+                languages of the web.
+              </p>
+            </div>
+            <div className="max-w-xs p-4 text-center justify-center">
+              <svg
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6rem"
+                className="mx-auto mb-4"
+              >
+                <path
+                  d="M6 2.5H7M4.5 4V1.5C4.5 0.947715 4.94772 0.5 5.5 0.5H9.5C10.0523 0.5 10.5 0.947715 10.5 1.5V6.5C10.5 7.05228 10.0523 7.5 9.5 7.5H5.5C4.94772 7.5 4.5 7.94772 4.5 8.5V13.5C4.5 14.0523 4.94772 14.5 5.5 14.5H9.5C10.0523 14.5 10.5 14.0523 10.5 13.5V11M8 4.5H1.5C0.947715 4.5 0.5 4.94772 0.5 5.5V10.5C0.5 11.0523 0.947715 11.5 1.5 11.5H4.5M7 10.5H13.5C14.0523 10.5 14.5 10.0523 14.5 9.5V4.5C14.5 3.94772 14.0523 3.5 13.5 3.5H10.5M8 12.5H9"
+                  stroke="#000000"
+                />
+              </svg>
+              <h2 className="text-xl font-bold mb-2">Python</h2>
+              <p>
+                Learn one of the most popular programming languages in the world
               </p>
             </div>
           </div>

@@ -19,9 +19,7 @@ export default function HeaderSm({ text }) {
         />
         <div className={styles.textbox}>
           <div className="container mx-auto">
-            <div className={styles.textboxInner}>
-              <h1 className="text-4xl font-bold">{text}</h1>
-            </div>
+              <h1 className="text-4xl font-bold mt-8" >{text}</h1>
           </div>
         </div>
       </div>

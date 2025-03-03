@@ -15,8 +15,16 @@ export default function Navbar() {
   const [isActive, setActive] = useState("false");
   const [isDropdownActive, setDropdownActive] = useState(false);
 
+  function setNavbarState(value) {
+    setActive(value);
+
+    if (value) {
+      setDropdownActive(false);
+    }
+  }
+
   function handleToggle() {
-    setActive(!isActive);
+    setNavbarState(!isActive);
   }
 
   function handleDropdownToggle() {
@@ -30,7 +38,7 @@ export default function Navbar() {
        */
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
-          setActive(true);
+          setNavbarState(true);
         }
       }
       // Bind the event listener
@@ -84,27 +92,20 @@ export default function Navbar() {
             `}
           >
             <a
-              className={`${styles.dropdownTitle} 
-              ${pathname === "/services" ? styles.active : ""}`}
+              className={`${styles.dropdownTitle}`}
               onClick={handleDropdownToggle}
             >
-              Services
+              Languages
             </a>
             <ul className={styles.dropdownMenu}>
               <li>
-                <Link href="/services/computer-repair" className={`link ${pathname === "/services/computer-repair" ? styles.active : ""}`}>Computer & Laptop Repairs</Link>
+                <Link href="/languages/scratch" className={`link ${pathname === "/languages/scratch" ? styles.active : ""}`}>Scratch</Link>
               </li>
               <li>
-                <Link href="/services/computer-upgrades" className={`link ${pathname === "/services/computer-upgrades" ? styles.active : ""}`}>Computer Upgrades & Speedup</Link>
+                <Link href="/languages/webdev" className={`link ${pathname === "/languages/webdev" ? styles.active : ""}`}>Web Development</Link>
               </li>
               <li>
-                <Link href="/services/it-support" className={`link ${pathname === "/services/it-support" ? styles.active : ""}`}>IT Support</Link>
-              </li>
-              <li>
-                <Link href="/services/web-design" className={`link ${pathname === "/services/web-design" ? styles.active : ""}`}>Web Design</Link>
-              </li>
-              <li>
-                <Link href="/services/virus-removal" className={`link ${pathname === "/services/virus-removal" ? styles.active : ""}`}>Virus Removal</Link>
+                <Link href="/languages/python" className={`link ${pathname === "/languages/python" ? styles.active : ""}`}>Python</Link>
               </li>
             </ul>
           </li>

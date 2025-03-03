@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 50em;
-  margin-bottom: 3.5em;
+  margin-bottom: 5em;
 }
 
 .header img {
@@ -21,16 +21,6 @@
 }
 
 @media (min-width: 920px) {
-  .header {
-    height: 50em;
-    clip-path: polygon(0 0, 100% 0, 100% 25em, 0 100%);
-    margin-bottom: none;
-  }
-
-  .textbox {
-    margin-top: -5em;
-  }
-
   .textboxInner {
     width: 50%;
   }

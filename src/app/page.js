@@ -37,20 +37,7 @@ export default function Home() {
                     web development and more.
                   </p>
                   <Link href="/contact">
-                    <Button>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      Get a Quote Now
-                    </Button>
+                    <Button>Get Started</Button>
                   </Link>
                 </div>
               </div>
@@ -59,7 +46,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto mb-16">
-          <h1 className="text-center text-3xl font-bold mb-4">
+          <h1 className="text-center text-3xl font-bold mb-8">
             Learn Programming Languages
           </h1>
           <div className="text-center mb-4 flex flex-row flex-wrap justify-center">
@@ -75,7 +62,10 @@ export default function Home() {
                 <path d="M11.406 11.312c-.78-.123-1.198-.654-.99-2.295l.023-.198c.175-1.426.321-1.743.996-1.706.198.013.426.14.654.33.211.247.68.568.945 1.204.19.466.254.77.281 1.098l.042.402v-.002a.68.68 0 0 0 1.342-.007c.008-.044.176-4.365.176-4.436 0-.38-.302-.69-.68-.696a.685.685 0 0 0-.682.688c0 .009-.001.605-.014 1.206-.536-.592-1.223-1.123-1.994-1.17-2.058-.11-2.283 1.811-2.419 2.918l-.02.196c-.278 2.189.441 3.569 2.13 3.837 1.838.293 3.063.72 3.074 1.868.007.446-.224.903-.627 1.254a2.163 2.163 0 0 1-1.749.507 3.233 3.233 0 0 1-.539-.141c-.24-.136-.847-.51-1.154-.942-.26-.364-.35-.937-.378-1.3.004-.163.005-.27.005-.283a.69.69 0 0 0-.669-.703.689.689 0 0 0-.696.682c0 .013-.017 1.367-.066 2.183-.07 1.313 0 2.426 0 2.474.028.382.35.67.727.644a.681.681 0 0 0 .635-.733c0-.006-.033-.545-.029-1.29a5.21 5.21 0 0 0 1.938.773 3.451 3.451 0 0 0 2.856-.82c.713-.619 1.122-1.464 1.11-2.32-.024-2.555-2.865-3.004-4.228-3.222M14.174 0a5.51 5.51 0 0 0-2.724.723h-.112c-2.637 0-4.937 1.392-6.15 3.728-.728 1.393-.9 2.75-.999 3.579-.012.089-.018.17-.028.262-.12.974-.123 1.904-.01 2.772a5.824 5.824 0 0 0-.625 2.529v.016a58.919 58.919 0 0 1-.057 1.95 29.72 29.72 0 0 0-.008 2.94l.013.209C3.698 21.676 6.159 24 9.083 24a5.516 5.516 0 0 0 3.463-1.21 8.357 8.357 0 0 0 5.195-2.08c1.826-1.587 2.859-3.845 2.83-6.19-.013-1.362-.346-2.638-.978-3.763.117-1.273.221-4.996.221-5.03 0-3.103-2.484-5.67-5.539-5.727zm.056 2.675c1.642.03 2.978 1.412 2.978 3.081 0 .038-.145 4.497-.215 4.883a3.152 3.152 0 0 1-.203.69c.756.89 1.165 2 1.175 3.256.021 1.555-.681 3.076-1.926 4.16a5.763 5.763 0 0 1-3.8 1.444 5.986 5.986 0 0 1-.718-.048 3.386 3.386 0 0 1-.172.215 2.97 2.97 0 0 1-2.264 1.038c-1.573 0-2.897-1.255-3.013-2.856l-.008-.122a27.366 27.366 0 0 1 .005-2.662c.039-.679.06-1.831.062-2.08a3.124 3.124 0 0 1 .783-2.025c-.237-.835-.312-1.836-.167-3.02l.024-.212c.083-.695.208-1.72.72-2.7.765-1.473 2.168-2.318 3.848-2.318a4.568 4.568 0 0 1 .824.07c.546-.5 1.27-.81 2.067-.794Z" />
               </svg>
               <h2 className="text-xl font-bold mb-2">Scratch</h2>
-              <p>Get started learning basic coding concepts</p>
+              <p className="mb-4">Get started learning basic coding concepts</p>
+              <Link href="/learn/web-development" className="text-sky-800">
+                Learn More
+              </Link>
             </div>
             <div className="max-w-xs p-4 text-center justify-center">
               <svg
@@ -95,10 +85,13 @@ export default function Home() {
               </svg>
 
               <h2 className="text-xl font-bold mb-2">Web Development</h2>
-              <p>
+              <p className="mb-4">
                 Learn HTML, CSS & Javascript - the three core programming
                 languages of the web.
               </p>
+              <Link href="/learn/web-development" className="text-sky-800">
+                Learn More
+              </Link>
             </div>
             <div className="max-w-xs p-4 text-center justify-center">
               <svg
@@ -114,9 +107,12 @@ export default function Home() {
                 />
               </svg>
               <h2 className="text-xl font-bold mb-2">Python</h2>
-              <p>
+              <p className="mb-4">
                 Learn one of the most popular programming languages in the world
               </p>
+              <Link href="/learn/web-development" className="text-sky-800">
+                Learn More
+              </Link>
             </div>
           </div>
         </section>

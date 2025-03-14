@@ -125,12 +125,12 @@
   .dropdownMenu {
     max-height: 0.5em;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
   }
   
   .dropdownActive .dropdownMenu {
     max-height: 20em;
-    transition: max-height 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition: max-height 0.5s;
   }
 }
 

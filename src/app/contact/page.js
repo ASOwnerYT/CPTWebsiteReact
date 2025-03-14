@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <HeaderSm text="Contact" />
       <section className="container mx-auto">
-        <p className="mb-4">
+        <p className="mb-4 text-gray-900">
           Contact us about anything related to our company or services.
           <br />
           We&apos;ll do our best to get back to you as soon as possible.

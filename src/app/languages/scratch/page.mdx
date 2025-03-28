@@ -1,57 +1,67 @@
-import Image from "next/image"
-import img from "/src/app/assets/scratch.jpg"
-import img2 from "/src/app/assets/scratch-2.png"
+import Image from "next/image";
+import Quiz from "@/app/components/Quiz";
+import img from "/src/app/assets/scratch.jpg";
+import img2 from "/src/app/assets/scratch-2.png";
 
 <Image src={img} alt="Scratch" priority placeholder="blur" />
 
 # Scratch
 
-Scratch is an easy-to-use programming language created for kids and beginners. This tutorial will highlight why Scratch is an excellent starting point for young learners interested in coding through simple game development.  
+Scratch is an easy-to-use programming language created for kids and beginners. This tutorial will highlight why Scratch is an excellent starting point for young learners interested in coding through simple game development.
 
-Whether you want to create interactive stories, design games, or explore basic animation, Scratch offers a flexible platform for creative expression and problem-solving. By following this tutorial, you'll gain a solid understanding of Scratch and why it's an ideal language for beginners.  
+Whether you want to create interactive stories, design games, or explore basic animation, Scratch offers a flexible platform for creative expression and problem-solving. By following this tutorial, you'll gain a solid understanding of Scratch and why it's an ideal language for beginners.
 
-### What is Scratch?  
+### What is Scratch?
 
-Scratch is a visual programming language and an online community where users can create and share interactive projects like stories, games, and animations. Designed for beginners, it features a block-based, drag-and-drop system that makes coding intuitive and engaging.  
+Scratch is a visual programming language and an online community where users can create and share interactive projects like stories, games, and animations. Designed for beginners, it features a block-based, drag-and-drop system that makes coding intuitive and engaging.
 
-Scratch helps users grasp fundamental programming concepts while fostering creativity and collaboration. The online community allows users to showcase their work, receive feedback, and engage with others worldwide, promoting peer learning and interaction.  
+Scratch helps users grasp fundamental programming concepts while fostering creativity and collaboration. The online community allows users to showcase their work, receive feedback, and engage with others worldwide, promoting peer learning and interaction.
 
 Developed by the Lifelong Kindergarten Group at the MIT Media Lab, Scratch is primarily aimed at ages 8 to 16 but is widely used by learners of all ages.
 
-## Getting Started with Scratch  
+## Getting Started with Scratch
+
 ### Step 1: Access Scratch
+
 - Go to [Scratch's website](https://scratch.mit.edu/).
 - Click on "Create" to start a new project.
 - If you want to save your work, sign up for a free Scratch account.
 
 ### Step 2: Understanding the Interface
+
 Scratch has several key areas:
+
 - **Stage**: Where your project is displayed.
 - **Sprites Pane**: Contains characters and objects (sprites) used in your project.
 - **Blocks Palette**: Contains different types of coding blocks.
 - **Scripts Area**: Where you drag and connect blocks to create your program.
 
-<Image src={img2} alt='Scratch Interface' placeholder="blur" />
+<Image src={img2} alt="Scratch Interface" placeholder="blur" />
 
 ---
 
 ## Creating Your First Project
+
 ### Step 1: Adding a Sprite
+
 1. Click the "Choose a Sprite" button below the stage.
 2. Select a sprite from the library or upload your own.
 
 ### Step 2: Moving the Sprite
+
 1. Go to the **Blocks Palette** and select the "Motion" category.
 2. Drag the `move 10 steps` block into the Scripts Area.
 3. Click the block to see your sprite move!
 
 ### Step 3: Adding Events
+
 1. Go to the "Events" category.
 2. Drag the `when green flag clicked` block to the Scripts Area.
 3. Attach it to the `move 10 steps` block.
 4. Click the green flag at the top to run your program.
 
 ### Step 4: Adding Loops
+
 1. Go to the "Control" category.
 2. Drag the `repeat 10` block and place it around the `move 10 steps` block.
 3. Now the sprite will move multiple times when the green flag is clicked.
@@ -59,12 +69,15 @@ Scratch has several key areas:
 ---
 
 ## Enhancing Your Project
+
 ### Adding Sounds
+
 1. Click on the "Sounds" tab in the Sprites Pane.
 2. Select a sound from the library or upload your own.
 3. Use the `play sound until done` block from the "Sound" category.
 
 ### Changing Backdrops
+
 1. Click on the "Choose a Backdrop" button at the bottom right.
 2. Select a backdrop from the library.
 3. Use the `switch backdrop to` block from the "Looks" category to change the backdrop during the program.
@@ -72,17 +85,111 @@ Scratch has several key areas:
 ---
 
 ## Saving and Sharing Your Project
+
 - Click "File" > "Save now" to save your work.
 - Click "Share" to publish your project on the Scratch website.
 
 ---
 
 ## Next Steps
+
 - Experiment with different blocks.
 - Try adding animations and sounds.
 - Explore other users' projects on Scratch for inspiration.
 
 ## Resources
+
 - [Scratch Official Website](https://scratch.mit.edu)
 - [Scratch Official YouTube Channel](https://www.youtube.com/@ScratchTeam/)
 - [Raspberry Pi Scratch Tutorials](https://projects.raspberrypi.org/en/pathways/scratch-intro)
+
+---
+
+## Quiz
+
+Test your knowledge with a 5 question quiz!
+
+<Quiz
+  data={{
+    questions: [
+      {
+        id: 1,
+        title: "What is Scratch?",
+        correctMessage:
+          "Correct! Scratch is a visual programming language designed for beginners.",
+        incorrectMessage:
+          "Incorrect! Scratch is a block-based coding language that helps beginners learn programming.",
+        answers: [
+          { id: 1, text: "A block-based programming language", correct: true },
+          { id: 2, text: "A text-based programming language", correct: false },
+          { id: 3, text: "A drawing software", correct: false },
+          { id: 4, text: "A web browser", correct: false },
+        ],
+      },
+      {
+        id: 2,
+        title: "Which part of the Scratch interface displays your project?",
+        correctMessage:
+          "Correct! The Stage is where your project is displayed.",
+        incorrectMessage:
+          "Incorrect! The Stage is the area that displays the project.",
+        answers: [
+          { id: 1, text: "Stage", correct: true },
+          { id: 2, text: "Sprites Pane", correct: false },
+          { id: 3, text: "Blocks Palette", correct: false },
+          { id: 4, text: "Scripts Area", correct: false },
+        ],
+      },
+      {
+        id: 3,
+        title: "How do you make a sprite move in Scratch?",
+        correctMessage:
+          "Correct! The 'move 10 steps' block moves a sprite forward.",
+        incorrectMessage:
+          "Incorrect! You need to use the 'move 10 steps' block from the Motion category.",
+        answers: [
+          { id: 1, text: "Use the 'move 10 steps' block", correct: true },
+          {
+            id: 2,
+            text: "Use the 'play sound until done' block",
+            correct: false,
+          },
+          { id: 3, text: "Click on the sprite", correct: false },
+          { id: 4, text: "Use the 'switch backdrop to' block", correct: false },
+        ],
+      },
+      {
+        id: 4,
+        title: "Which block allows you to start a program when clicked?",
+        correctMessage:
+          "Correct! The 'when green flag clicked' block starts the program.",
+        incorrectMessage:
+          "Incorrect! The 'when green flag clicked' block is used to begin the program.",
+        answers: [
+          { id: 1, text: "when green flag clicked", correct: true },
+          { id: 2, text: "repeat 10", correct: false },
+          { id: 3, text: "switch backdrop to", correct: false },
+          { id: 4, text: "play sound until done", correct: false },
+        ],
+      },
+      {
+        id: 5,
+        title: "How can you add a sound to your Scratch project?",
+        correctMessage:
+          "Correct! You can add sounds by selecting one from the library or uploading your own.",
+        incorrectMessage:
+          "Incorrect! Sounds can be added from the Sounds tab and played using the 'play sound until done' block.",
+        answers: [
+          {
+            id: 1,
+            text: "Click the 'Sounds' tab and choose a sound",
+            correct: true,
+          },
+          { id: 2, text: "Click on the Stage", correct: false },
+          { id: 3, text: "Change the backdrop", correct: false },
+          { id: 4, text: "Use the 'move 10 steps' block", correct: false },
+        ],
+      },
+    ],
+  }}
+/>

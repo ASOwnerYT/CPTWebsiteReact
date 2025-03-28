@@ -30,7 +30,7 @@ export default function BackToTopButton() {
   return (
     <div className="fixed bottom-4 right-4 z-10">
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full transition-opacity duration-500 ease-in-out aspect-square"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full transition-opacity duration-500 ease-in-out aspect-square cursor-pointer"
         style={{ opacity: visible ? 1 : 0 }}
         onClick={handleClick}
       >

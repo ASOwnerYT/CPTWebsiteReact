@@ -95,7 +95,7 @@ export default function Quiz({ data }) {
               item.correct ? (
                 // Correct
                 <button
-                  className="w-full text-left p-4 mb-2 bg-green-100 border-2 border-solid border-green-300 rounded-lg shadow-sm cursor-default transition-colors"
+                  className="w-full text-left p-4 mb-2 bg-green-100 border-2 border-solid border-green-300 rounded-lg shadow-xs cursor-default transition-colors"
                   key={item.id}
                 >
                   {item.text}
@@ -103,7 +103,7 @@ export default function Quiz({ data }) {
               ) : (
                 // Incorrect
                 <button
-                  className="w-full text-left p-4 mb-2 bg-red-100 border-2 border-solid border-red-300 rounded-lg shadow-sm cursor-default transition-colors"
+                  className="w-full text-left p-4 mb-2 bg-red-100 border-2 border-solid border-red-300 rounded-lg shadow-xs cursor-default transition-colors"
                   key={item.id}
                 >
                   {item.text}
@@ -112,7 +112,7 @@ export default function Quiz({ data }) {
             ) : (
               // Not selected
               <button
-                className="w-full text-left p-4 mb-2 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border-2 border-solid border-slate-300 rounded-lg shadow-sm"
+                className="w-full text-left p-4 mb-2 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border-2 border-solid border-slate-300 rounded-lg shadow-xs"
                 key={item.id}
                 onClick={() => handleAnswerClick(item.id)}
               >
@@ -134,7 +134,7 @@ export default function Quiz({ data }) {
                 </p>
               )}
               <button
-                className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-2 px-4 rounded-full shadow-sm text-sm font-bold"
+                className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-2 px-4 rounded-full shadow-xs text-sm font-bold"
                 onClick={nextQuestion}
               >
                 Next Question
@@ -156,7 +156,7 @@ export default function Quiz({ data }) {
           )}
 
           <button
-            className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-2 px-4 rounded-full shadow-sm text-sm font-bold"
+            className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-2 px-4 rounded-full shadow-xs text-sm font-bold"
             onClick={resetQuiz}
           >
             Try Again

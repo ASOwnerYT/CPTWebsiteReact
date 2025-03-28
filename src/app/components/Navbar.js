@@ -54,7 +54,7 @@ export default function Navbar() {
   useOutsideAlerter(wrapperRef);
 
   return (
-    <nav className={`${styles.navbar} shadow`}>
+    <nav className={`${styles.navbar} shadow-sm`}>
       <div className={`${styles.container} container mx-auto`} ref={wrapperRef}>
         <div className={styles.header}>
           <div>

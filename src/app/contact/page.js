@@ -1,70 +1,163 @@
-import styles from "./page.module.css";
 import HeaderSm from "../components/HeaderSm";
 
 export default function Home() {
   return (
     <div>
       <HeaderSm text="Contact" />
-      <section className="container mx-auto">
+      <section className="container mx-auto mb-32">
         <p className="mb-4 text-gray-900">
-          Contact us about anything related to our company or services.
-          <br />
-          We&apos;ll do our best to get back to you as soon as possible.
+          Contact us about anything related to learning to code. We will get back to you as soon as possible.
         </p>
-        <div className={styles.contactDetails}>
-          <h3 className="text-lg font-bold hover:underline">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              width="1em"
+        <form method="GET" action="/formsubmit" className="space-y-4">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="mt-1 p-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="mt-1 p-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+            />
+          </div>
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              className="mt-1 p-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="programmingLanguage"
+              className="block text-sm font-medium text-gray-700"
             >
-              <path
-                fillRule="evenodd"
-                d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <a href="tel:+640211077483">021 107 7483</a>
-          </h3>
-          <h3 className="text-lg font-bold hover:underline">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              width="1em"
+              Favourite Programming Language
+            </label>
+            <select
+              id="programmingLanguage"
+              name="programmingLanguage"
+              required
+              className="mt-1 p-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
             >
-              <path
-                fillRule="evenodd"
-                d="M5.404 14.596A6.5 6.5 0 1 1 16.5 10a1.25 1.25 0 0 1-2.5 0 4 4 0 1 0-.571 2.06A2.75 2.75 0 0 0 18 10a8 8 0 1 0-2.343 5.657.75.75 0 0 0-1.06-1.06 6.5 6.5 0 0 1-9.193 0ZM10 7.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <a href="mailto:info@teatatucomputers.com">
-              info@teatatucomputers.com
-            </a>
-          </h3>
-        </div>
-        <form
-          action="https://form.taxi/s/es9ddva1"
-          method="POST"
-          className={styles.form}
-        >
-          <label htmlFor="Name">Name*</label>
-          <input type="text" name="Name" required />
-
-          <label htmlFor="Phone">Phone Number </label>
-          <input type="tel" name="Phone" />
-
-          <label htmlFor="Email">Email*</label>
-          <input type="email" name="Email" required />
-
-          <label htmlFor="firstname">Message*</label>
-          <textarea name="Message"></textarea>
-
-          <p className={styles.sm}>* required</p>
-
-          <input type="submit" value="Submit" required />
+              <option value="none">None</option>
+              <option value="scratch">Scratch</option>
+              <option value="html-css-js">HTML/CSS/JS</option>
+              <option value="python">Python</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              className="mt-1 p-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+            ></textarea>
+          </div>
+          <div>
+            <fieldset>
+              <legend className="block text-sm font-medium text-gray-700">Preferred Contact Method</legend>
+              <div className="mt-2 space-y-2">
+                <div>
+                  <input
+                    type="radio"
+                    id="contactEmail"
+                    name="contactMethod"
+                    value="email"
+                    required
+                    className="h-4 w-4 text-sky-600 border-gray-300 focus:ring-sky-500"
+                  />
+                  <label htmlFor="contactEmail" className="ml-2 text-sm text-gray-700">
+                    Email
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="contactPhone"
+                    name="contactMethod"
+                    value="phone"
+                    required
+                    className="h-4 w-4 text-sky-600 border-gray-300 focus:ring-sky-500"
+                  />
+                  <label htmlFor="contactPhone" className="ml-2 text-sm text-gray-700">
+                    Phone
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend className="block text-sm font-medium text-gray-700">Topics of Interest</legend>
+              <div className="mt-2 space-y-2">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="topicWebDev"
+                    name="topics"
+                    value="webDevelopment"
+                    className="h-4 w-4 text-sky-600 border-gray-300 focus:ring-sky-500"
+                  />
+                  <label htmlFor="topicWebDev" className="ml-2 text-sm text-gray-700">
+                    Web Development
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="topicDataScience"
+                    name="topics"
+                    value="dataScience"
+                    className="h-4 w-4 text-sky-600 border-gray-300 focus:ring-sky-500"
+                  />
+                  <label htmlFor="topicDataScience" className="ml-2 text-sm text-gray-700">
+                    Data Science
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="topicGameDev"
+                    name="topics"
+                    value="gameDevelopment"
+                    className="h-4 w-4 text-sky-600 border-gray-300 focus:ring-sky-500"
+                  />
+                  <label htmlFor="topicGameDev" className="ml-2 text-sm text-gray-700">
+                    Game Development
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button
+            type="submit"
+            className="inline-flex justify-center rounded-md border border-transparent bg-sky-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+          >
+            Submit
+          </button>
         </form>
       </section>
     </div>

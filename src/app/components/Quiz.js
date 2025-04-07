@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 
 export default function Quiz({ data }) {
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState(null); // Null means no answer selected
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [shuffledData, setShuffledData] = useState(data); // Initialize with original data
 
+  // Function to shuffle the answers for each question
   const shuffleQuestions = (data) => {
     return {
       ...data,
@@ -20,10 +21,13 @@ export default function Quiz({ data }) {
     };
   };
 
+  // Shuffle data after component mounts
+  // useEffect is needed to run Javascript client-side only, as NextJS normally uses server-side rendering
   useEffect(() => {
-    setShuffledData(shuffleQuestions(data)); // Shuffle data after component mounts
+    setShuffledData(shuffleQuestions(data)); 
   }, [data]);
 
+  // Runs when an answer is clicked
   const handleAnswerClick = (id) => {
     setSelectedAnswer(id);
 
@@ -35,6 +39,7 @@ export default function Quiz({ data }) {
     }
   };
 
+  // Go to next question
   const nextQuestion = () => {
     if (questionIndex === data.questions.length - 1) {
       setShowResults(true);
@@ -45,6 +50,7 @@ export default function Quiz({ data }) {
     }
   };
 
+  // Reset
   const resetQuiz = () => {
     setQuestionIndex(0);
     setSelectedAnswer(null);

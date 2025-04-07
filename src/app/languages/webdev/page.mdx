@@ -1,0 +1,212 @@
+import Quiz from "@/app/components/Quiz";
+
+# Introduction to Web Development
+
+Frontend web development involves creating the part of a website that users interact with. It consists of three core technologies:
+
+- **HTML (HyperText Markup Language)**: Defines the structure of a webpage.
+- **CSS (Cascading Style Sheets)**: Styles the webpage to make it visually appealing.
+- **JavaScript**: Adds interactivity to the webpage.
+
+---
+
+## HTML Basics
+
+HTML provides the basic structure of a webpage using elements enclosed in tags.
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Web Page</title>
+  </head>
+  <body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a paragraph.</p>
+    <a href="https://www.example.com">Click here</a>
+  </body>
+</html>
+```
+
+### Key Elements:
+
+- `<h1> - <h6>`: Headings
+- `<p>`: Paragraph
+- `<a href="URL">`: Link
+- `<img src="image.jpg">`: Image
+- `<ul>, <ol>, <li>`: Lists
+
+---
+
+## CSS Basics
+
+CSS is used to style HTML elements to make the webpage visually appealing.
+
+### Example:
+
+```css
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+```
+
+### Key Concepts:
+
+- **Selectors**: Target HTML elements (`h1`, `p`, `div`)
+- **Properties**: Define styles (e.g., `color`, `font-size`)
+- **Values**: Define property values (e.g., `red`, `20px`)
+
+---
+
+## JavaScript Basics
+
+JavaScript makes webpages interactive.
+
+### Example:
+
+```html
+<button onclick="sayHello()">Click Me</button>
+<script>
+  function sayHello() {
+    alert("Hello, World!");
+  }
+</script>
+```
+
+### Key Concepts:
+
+- **Variables**: Store data (`let x = 10;`)
+- **Functions**: Perform actions (`function greet() {}`)
+- **Events**: Respond to user actions (`onclick`, `onmouseover`)
+
+---
+
+## Roadmap for Learning Frontend Development
+
+### Step 1: Learn the Basics
+
+- HTML: Structure of webpages
+- CSS: Styling techniques
+- JavaScript: Basic interactivity
+
+### Step 2: Intermediate Skills
+
+- CSS Flexbox & Grid: Layout design
+- JavaScript DOM Manipulation: Dynamic content updates
+- Responsive Design: Making sites mobile-friendly
+
+### Step 3: Advanced Topics
+
+- CSS Frameworks: Bootstrap, Tailwind CSS
+- JavaScript ES6+: Modern JS features
+- APIs & Fetch: Data handling
+
+### Step 4: Build Projects
+
+- Personal Portfolio
+- To-Do List App
+- Weather App (using API)
+
+### Step 5: Learn a Framework
+
+- **React.js**: Popular library for UI development
+- **Vue.js**: Lightweight and beginner-friendly alternative
+
+### Step 6: Deploy Your Work
+
+- Git & GitHub: Version control
+- Netlify/Vercel: Free hosting for frontend projects
+
+By following this roadmap and practicing regularly, you'll become a skilled frontend developer!
+
+---
+## Quiz
+Test your knowledge with a 5 question quiz!
+
+<Quiz
+  data={{
+    questions: [
+      {
+        id: 0,
+        title: "What does HTML stand for?",
+        correctMessage: "Correct! HTML stands for HyperText Markup Language.",
+        incorrectMessage:
+          "Incorrect! HTML is the standard markup language for creating web pages.",
+        answers: [
+          { id: 0, text: "HyperText Markup Language", correct: true },
+          { id: 1, text: "Hyperlink and Text Markup Language", correct: false },
+          { id: 2, text: "Home Tool Markup Language", correct: false },
+          { id: 3, text: "Hyper Transfer Markup Language", correct: false },
+        ],
+      },
+      {
+        id: 1,
+        title: "Which CSS property is used to change text color?",
+        correctMessage:
+          "Correct! The 'color' property is used to change text color in CSS.",
+        incorrectMessage:
+          "Incorrect! The 'color' property is used to set the color of text.",
+        answers: [
+          { id: 0, text: "color", correct: true },
+          { id: 1, text: "text-color", correct: false },
+          { id: 2, text: "font-color", correct: false },
+          { id: 3, text: "text-style", correct: false },
+        ],
+      },
+      {
+        id: 2,
+        title: "Which of the following is used to make a website interactive?",
+        correctMessage:
+          "Correct! JavaScript is used to add interactivity to a website.",
+        incorrectMessage:
+          "Incorrect! JavaScript is the programming language that makes websites interactive.",
+        answers: [
+          { id: 0, text: "HTML", correct: false },
+          { id: 1, text: "CSS", correct: false },
+          { id: 2, text: "JavaScript", correct: true },
+          { id: 3, text: "Python", correct: false },
+        ],
+      },
+      {
+        id: 3,
+        title: "What does the 'flexbox' feature in CSS do?",
+        correctMessage:
+          "Correct! Flexbox is used to create flexible and responsive layouts.",
+        incorrectMessage:
+          "Incorrect! Flexbox is a layout model that allows items to align and distribute space efficiently.",
+        answers: [
+          {
+            id: 0,
+            text: "Creates flexible and responsive layouts",
+            correct: true,
+          },
+          { id: 1, text: "Adds animations to a website", correct: false },
+          { id: 2, text: "Changes the background color", correct: false },
+          { id: 3, text: "Creates database connections", correct: false },
+        ],
+      },
+      {
+        id: 4,
+        title:
+          "Which JavaScript method is used to select an element by its ID?",
+        correctMessage:
+          "Correct! 'document.getElementById()' selects an element by its ID.",
+        incorrectMessage:
+          "Incorrect! Use 'document.getElementById()' to target an element by ID.",
+        answers: [
+          { id: 0, text: "getElementById()", correct: true },
+          { id: 1, text: "querySelector()", correct: false },
+          { id: 2, text: "getClass()", correct: false },
+          { id: 3, text: "findElement()", correct: false },
+        ],
+      },
+    ],
+  }}
+/>

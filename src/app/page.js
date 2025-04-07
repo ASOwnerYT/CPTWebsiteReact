@@ -89,7 +89,7 @@ export default function Home() {
                 Learn HTML, CSS & Javascript - the three core programming
                 languages of the web.
               </p>
-              <Link href="/learn/web-development" className="text-sky-800">
+              <Link href="/languages/webdev" className="text-sky-800">
                 Learn More
               </Link>
             </div>
@@ -110,7 +110,7 @@ export default function Home() {
               <p className="mb-4 text-gray-950">
                 Learn one of the most popular programming languages in the world
               </p>
-              <Link href="/learn/web-development" className="text-sky-800">
+              <Link href="/languages/python" className="text-sky-800">
                 Learn More
               </Link>
             </div>

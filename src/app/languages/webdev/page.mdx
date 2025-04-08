@@ -1,4 +1,5 @@
 import Quiz from "@/app/components/Quiz";
+import Countdown from "./Countdown";
 
 # Introduction to Web Development
 
@@ -10,81 +11,137 @@ Frontend web development involves creating the part of a website that users inte
 
 ---
 
-## HTML Basics
+## 🧠 What You'll Learn
 
-HTML provides the basic structure of a webpage using elements enclosed in tags.
+- Basics of **HTML structure**
+- Styling with **CSS**
+- Adding interactivity with **JavaScript**
+- How to display a **countdown timer** that updates every second
 
-### Example:
+---
+
+## ✅ Final Result
+
+You’ll have a timer that looks something like this:
+
+<Countdown />
+
+---
+
+## 🛠️ Step-by-Step Tutorial
+
+### 1️⃣ HTML – The Structure
+
+Create a file called `index.html`. This will hold the structure of your countdown timer.
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Web Page</title>
-  </head>
-  <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a paragraph.</p>
-    <a href="https://www.example.com">Click here</a>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown to New Year 2026:</h1>
+    <div id="countdown">
+      <span id="days">--</span> days 
+      <span id="hours">--</span> hours 
+      <span id="minutes">--</span> minutes 
+      <span id="seconds">--</span> seconds
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
 ```
 
-### Key Elements:
-
-- `<h1> - <h6>`: Headings
-- `<p>`: Paragraph
-- `<a href="URL">`: Link
-- `<img src="image.jpg">`: Image
-- `<ul>, <ol>, <li>`: Lists
-
 ---
 
-## CSS Basics
+### 2️⃣ CSS – Styling the Page
 
-CSS is used to style HTML elements to make the webpage visually appealing.
-
-### Example:
+Create a file called `style.css`. This will make everything look nicer.
 
 ```css
 body {
-  background-color: lightblue;
   font-family: Arial, sans-serif;
-}
-h1 {
-  color: darkblue;
+  background-color: #1e1e2f;
+  color: white;
   text-align: center;
+  padding-top: 100px;
+}
+
+.container {
+  background-color: #2d2d44;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#countdown {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+span {
+  font-weight: bold;
 }
 ```
-
-### Key Concepts:
-
-- **Selectors**: Target HTML elements (`h1`, `p`, `div`)
-- **Properties**: Define styles (e.g., `color`, `font-size`)
-- **Values**: Define property values (e.g., `red`, `20px`)
 
 ---
 
-## JavaScript Basics
+### 3️⃣ JavaScript – Making It Work
 
-JavaScript makes webpages interactive.
+Create a file called `script.js`. This will handle the countdown logic.
 
-### Example:
+```javascript
+// Set the target date
+const targetDate = new Date("January 1, 2026 00:00:00").getTime();
 
-```html
-<button onclick="sayHello()">Click Me</button>
-<script>
-  function sayHello() {
-    alert("Hello, World!");
+// Update the countdown every second
+const timer = setInterval(() => {
+  const now = new Date().getTime();
+  const timeLeft = targetDate - now;
+
+  // Time calculations
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  // Display the result
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
+
+  // If the countdown is over
+  if (timeLeft < 0) {
+    clearInterval(timer);
+    document.getElementById("countdown").textContent = "Happy New Year!";
   }
-</script>
+}, 1000);
 ```
 
-### Key Concepts:
+---
 
-- **Variables**: Store data (`let x = 10;`)
-- **Functions**: Perform actions (`function greet() {}`)
-- **Events**: Respond to user actions (`onclick`, `onmouseover`)
+## 🧪 Try It Out
+
+1. Create a folder with these 3 files: `index.html`, `style.css`, and `script.js`.
+2. Open `index.html` in your browser.
+3. Watch the countdown in action!
+
+---
+
+## 💡 Bonus Challenge
+
+Want to customize it? Try these:
+- Change the target date.
+- Add sound or animation when the timer hits zero.
+- Make it mobile-responsive.
 
 ---
 

@@ -1,6 +1,5 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
 @plugin "@tailwindcss/typography";
 
 @utility container {
@@ -23,4 +22,8 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+.prose code {
+  all: revert;
 }

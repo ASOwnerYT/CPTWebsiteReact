@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import "highlight.js/styles/github-dark.css";
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import BackToTopButton from "./components/BackToTopButton";

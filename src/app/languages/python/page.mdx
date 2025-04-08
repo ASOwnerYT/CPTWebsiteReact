@@ -1,0 +1,237 @@
+import Quiz from "@/app/components/Quiz";
+
+# 🐍 Beginner Python Tutorial + Learning Roadmap
+
+## 🎯 Why Learn Python?
+
+Python is a beginner-friendly programming language known for its readability and simplicity. It’s used in web development, data science, AI, automation, game development, and more.
+
+---
+
+## 🗺️ Python Learning Roadmap
+
+### **Phase 1: Basics of Python (Weeks 1–2)**
+Learn the fundamentals to build a strong foundation.
+
+#### Topics:
+- Installing Python & using an IDE (e.g., VS Code, Thonny, or Replit)
+- Print statements and comments
+- Variables and data types
+- Basic math operations
+- Input and output
+- Strings and string manipulation
+
+#### Example:
+```python
+name = input("What’s your name? ")
+print("Hello, " + name + "!")
+```
+
+---
+
+### **Phase 2: Control Flow (Weeks 3–4)**
+Learn how to make decisions and repeat actions.
+
+#### Topics:
+- `if`, `elif`, and `else` statements
+- Comparison and logical operators
+- Loops: `for` and `while`
+- Loop control: `break` and `continue`
+
+#### Example:
+```python
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+```
+
+---
+
+### **Phase 3: Data Structures (Weeks 5–6)**
+Understand how to organize and work with collections of data.
+
+#### Topics:
+- Lists and list methods
+- Tuples
+- Dictionaries
+- Sets
+- Looping through data structures
+
+#### Example:
+```python
+fruits = {"apple": 3, "banana": 5}
+for fruit, count in fruits.items():
+    print(f"{fruit}: {count}")
+```
+
+---
+
+### **Phase 4: Functions and Modules (Weeks 7–8)**
+Start organizing your code and reusing it effectively.
+
+#### Topics:
+- Defining and calling functions
+- Function arguments and return values
+- Built-in functions
+- Importing modules (`math`, `random`, etc.)
+
+#### Example:
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+```
+
+---
+
+### **Phase 5: Error Handling & File Handling (Week 9)**
+Learn to make your programs robust and handle real-world data.
+
+#### Topics:
+- Try/except blocks
+- Reading from and writing to files
+
+#### Example:
+```python
+try:
+    with open("data.txt", "r") as file:
+        content = file.read()
+    print(content)
+except FileNotFoundError:
+    print("File not found.")
+```
+
+---
+
+### **Phase 6: Object-Oriented Programming (Week 10+)**
+Understand the core concept of modern programming.
+
+#### Topics:
+- Classes and objects
+- Attributes and methods
+- `__init__` method (constructor)
+- Inheritance
+
+#### Example:
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(self.name + " says woof!")
+
+dog1 = Dog("Buddy")
+dog1.bark()
+```
+
+---
+
+## 🧠 Bonus Topics (Optional Advanced Stuff)
+- Working with APIs
+- GUI programming (Tkinter)
+- Web development (Flask or Django)
+- Data science (pandas, matplotlib, NumPy)
+- Automation (Selenium, pyautogui)
+
+---
+
+## 🔧 Practice Ideas for Beginners
+- Calculator
+- To-do list app (CLI)
+- Number guessing game
+- Rock, Paper, Scissors game
+- Simple text-based adventure game
+
+---
+
+## 📚 Free Resources
+- [Python.org Docs](https://docs.python.org/3/tutorial/)
+- [W3Schools Python](https://www.w3schools.com/python/)
+- [Real Python](https://realpython.com/)
+- YouTube Channels: Tech With Tim, freeCodeCamp
+
+---
+
+## ✅ Final Tips
+- Practice every day, even just a little
+- Break projects into small steps
+- Google is your friend — don’t be afraid to search
+- Build small projects to apply what you learn
+- Don’t rush — enjoy the process!
+
+---
+
+# Quiz
+Test your knowledge with a 5 question quiz!
+
+<Quiz
+  data={{
+    questions: [
+      {
+        id: 0,
+        title: "What is Python?",
+        correctMessage:
+          "Correct! Python is a beginner-friendly programming language used in many fields.",
+        incorrectMessage:
+          "Incorrect! Python is a programming language, not a snake in this context!",
+        answers: [
+          { id: 0, text: "A programming language", correct: true },
+          { id: 1, text: "A video game", correct: false },
+          { id: 2, text: "A spreadsheet app", correct: false },
+          { id: 3, text: "A web browser", correct: false },
+        ],
+      },
+      {
+        id: 1,
+        title: "What does this code output? print(2 + 3 * 4)",
+        correctMessage: "Correct! According to order of operations, 3*4 = 12, then 2 + 12 = 14.",
+        incorrectMessage: "Incorrect! Remember, multiplication comes before addition.",
+        answers: [
+          { id: 0, text: "14", correct: true },
+          { id: 1, text: "20", correct: false },
+          { id: 2, text: "24", correct: false },
+          { id: 3, text: "9", correct: false },
+        ],
+      },
+      {
+        id: 2,
+        title: "Which of these is a valid variable name in Python?",
+        correctMessage: "Correct! 'my_variable' follows Python naming rules.",
+        incorrectMessage: "Incorrect! Variable names can't start with numbers or contain spaces.",
+        answers: [
+          { id: 0, text: "my variable", correct: false },
+          { id: 1, text: "1variable", correct: false },
+          { id: 2, text: "my_variable", correct: true },
+          { id: 3, text: "def", correct: false },
+        ],
+      },
+      {
+        id: 3,
+        title: "What does an 'if' statement do in Python?",
+        correctMessage: "Correct! It allows your program to make decisions.",
+        incorrectMessage: "Incorrect! An 'if' statement checks a condition and runs code only if it's true.",
+        answers: [
+          { id: 0, text: "Repeats code forever", correct: false },
+          { id: 1, text: "Stores user input", correct: false },
+          { id: 2, text: "Makes decisions in the program", correct: true },
+          { id: 3, text: "Defines a variable", correct: false },
+        ],
+      },
+      {
+        id: 4,
+        title: "Which keyword is used to create a function in Python?",
+        correctMessage: "Correct! 'def' is used to define functions.",
+        incorrectMessage: "Incorrect! 'def' is the correct keyword to define a function.",
+        answers: [
+          { id: 0, text: "function", correct: false },
+          { id: 1, text: "define", correct: false },
+          { id: 2, text: "func", correct: false },
+          { id: 3, text: "def", correct: true },
+        ],
+      },
+    ],
+  }}
+/>

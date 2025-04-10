@@ -41,8 +41,8 @@ const CountdownTimer = () => {
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white rounded-md">
-      <h1 className="text-4xl font-bold mb-4">Countdown to New Year 2026</h1>
+    <div className="flex flex-col items-center justify-center py-16 bg-gray-900 text-white rounded-md">
+      <h1 className="text-3xl text-white font-bold mb-6">Countdown to New Year 2026</h1>
       <div className="flex space-x-8 text-2xl">
         <div className="text-center">
           <span className="block text-5xl font-extrabold">{days}</span>

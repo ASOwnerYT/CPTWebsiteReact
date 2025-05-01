@@ -33,6 +33,8 @@ export default function BackToTopButton() {
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full transition-opacity duration-500 ease-in-out aspect-square cursor-pointer"
         style={{ opacity: visible ? 1 : 0 }}
         onClick={handleClick}
+        aria-label="Scroll to top"
+        title="Scroll to top"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

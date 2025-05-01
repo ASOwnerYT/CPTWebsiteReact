@@ -60,6 +60,8 @@ export default function Carousel({ images }) {
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10 cursor-pointer"
+        aria-label="Previous Slide"
+        title="Previous Slide"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +81,8 @@ export default function Carousel({ images }) {
       <button
         onClick={nextSlide}
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10 cursor-pointer"
+        aria-label="Next Slide"
+        title="Next Slide"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

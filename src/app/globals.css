@@ -24,6 +24,7 @@
   }
 }
 
+/* Remove the default `prose` styles for code blocks. */
 .prose code {
   all: revert;
 }

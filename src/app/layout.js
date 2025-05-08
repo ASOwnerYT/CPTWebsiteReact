@@ -21,6 +21,9 @@ export const metadata = {
   description: "Learn HTML, CSS, Javascript, Python and more",
 };
 
+// This is the root layout for the app
+// Components put here will be put on every page
+// The code for the page will be put in the children prop {children}
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

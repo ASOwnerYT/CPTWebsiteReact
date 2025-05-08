@@ -1,13 +1,16 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+
+// Import button and slider components
+// This can be used like <Carousel images={images} /> in the main component
+import Carousel from "./components/Carousel";
+
+// Import images
 import bgimage from "./assets/header-bg.jpg";
 import bgimage2 from "./assets/pexels-divinetechygirl-1181263.jpg";
 import bgimage3 from "./assets/pexels-markusspiske-2004161.jpg";
 import bgimage4 from "./assets/pexels-realtoughcandy-11035547.jpg";
-import Button from "./components/Button";
-import Link from "next/link";
-import Carousel from "./components/Carousel";
 
+// Main page component
 export default function Home() {
   return (
     <div>

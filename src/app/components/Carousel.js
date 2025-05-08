@@ -46,7 +46,7 @@ export default function Carousel({ images }) {
               alt={`Slide ${index}`}
               placeholder="blur"
               quality={100}
-              priority
+              priority={index === 0}
               fill
               sizes="100vw"
               style={{

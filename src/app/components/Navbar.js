@@ -58,11 +58,13 @@ export default function Navbar() {
       <div className={`${styles.container} container mx-auto`} ref={wrapperRef}>
         <div className={styles.header}>
           <div>
+            {/* Logo and title */}
             <Link href="/" className={styles.logo}>
               <Image src={logo} width="32" height="32" alt="Logo" />
               <p>Computer Programming</p>
             </Link>
           </div>
+          {/* Menu button (hidden on desktop) */}
           <button
             className={styles.menuIcon}
             aria-label="Menu"
@@ -76,6 +78,7 @@ export default function Navbar() {
             />
           </button>
         </div>
+        {/* Navigation links */}
         <ul className={`${styles.links} ${isActive ? "" : styles.active}`}>
           <li>
             <Link
